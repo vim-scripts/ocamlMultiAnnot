@@ -1,0 +1,24 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3906
+
+This plugin is an improvement of the official ocaml ftplugin.
+
+It corrects the 2 following bugs:
+    - If nowrapscan is set, as annot file was not always read from beginning, we could not find result for information between the beginning of file and cursor position.
+    - In splitted view, when we were reloading the .annot file, it was closing one of the splitted view.
+
+New functionnality:
+If we work with several ocaml .ml files, annotation are loaded for every file and so we can use those annotation for every buffer.
+
+Added with version 1.1:
+In addition to printing the type with <LocalLeader>t, save the type in the unnamed register, in order to copy/use it more easily.
+
+I have tested this pugin on my own computer during a few weeks without bugs, please feel free to report bugs.
+
+The plugin is essentially based on the official ocaml ftplugin, I would like to thanks:
+David Baelde
+Mike Leary
+Markus Mottl
+Stefano Zacchiroli
+Vincent Aravantinos
+and others contributors to ocaml vim integration. 
+
